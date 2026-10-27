@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <div class="sidebar">
+
+        <h2>💜 SmartHire</h2>
+
+        <ul>
+            <li onclick="window.location.href='dashboard.html'">🏠 Dashboard</li>
+            <li onclick="window.location.href='profile.html'">👤 My Profile</li>
+            <li onclick="window.location.href='resume.html'">📄 Resume Builder</li>
+            <li onclick="window.location.href='jobs.html'">💼 Jobs Portal</li>
+            <li onclick="window.location.href='applications.html'">📨 Applications</li>
+            <li onclick="window.location.href='notifications.html'">🔔 Notifications</li>
+            <li onclick="toggleTheme()">🌙 Dark Mode</li>
+            <li onclick="logout()">🚪 Logout</li>
+        </ul>
+
+    </div>
+
+    <div class="main-content">
+
+        <h1>💼 Jobs Portal</h1>
+
+        <input
+            type="text"
+            id="searchJob"
+            placeholder="Search jobs..."
+            onkeyup="searchJobs()">
+
+        <br><br>
+
+        <div id="jobContainer"></div>
+
+    </div>
+
+</div>
+
+<div id="applyPopup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close"
+            onclick="closeApplyPopup()">
+            ×
+        </span>
+
+        <h2>📨 Apply for Job</h2>
+
+        <input
+            id="applyName"
+            type="text"
+            placeholder="Full Name">
+
+        <input
+            id="applyEmail"
+            type="email"
+            placeholder="Email">
+
+        <input
+            id="applyPhone"
+            type="text"
+            placeholder="Phone Number">
+
+        <input
+            id="applyRole"
+            type="text"
+            readonly>
+
+        <textarea
+            id="applyMessage"
+            placeholder="Why should we hire you?">
+        </textarea>
+
+        <button onclick="submitApplication()">
+            Submit Application
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+
+loadJobs();
+
+</script>
+
+</body>
+</html>

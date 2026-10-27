@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHire Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <div class="sidebar">
+
+        <h2>💜 SmartHire</h2>
+
+        <ul>
+            <li onclick="window.location.href='dashboard.html'">🏠 Dashboard</li>
+            <li onclick="window.location.href='profile.html'">👤 My Profile</li>
+            <li onclick="window.location.href='resume.html'">📄 Resume Builder</li>
+            <li onclick="window.location.href='jobs.html'">💼 Jobs Portal</li>
+            <li onclick="window.location.href='applications.html'">📨 Applications</li>
+            <li onclick="window.location.href='notifications.html'">🔔 Notifications</li>
+            <li onclick="toggleTheme()">🌙 Dark Mode</li>
+            <li onclick="logout()">🚪 Logout</li>
+        </ul>
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="welcome-card">
+
+            <h1 id="welcomeUser">Welcome 👋</h1>
+
+            <p>
+                Find jobs, build resumes and grow your career with SmartHire.
+            </p>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="stat-card" onclick="window.location.href='jobs.html'">
+                <h3 id="jobCount">0</h3>
+                <p>Jobs Available</p>
+            </div>
+
+            <div class="stat-card" onclick="showCompanies()">
+                <h3 id="companyCount">0</h3>
+                <p>Companies</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="applicationCount">0</h3>
+                <p>Applications</p>
+            </div>
+
+        </div>
+
+        <div class="companies">
+
+            <h2>🏢 Top Hiring Companies</h2>
+
+            <div class="company-grid" id="companyGrid"></div>
+
+        </div>
+
+        <div class="jobs-section">
+
+            <h2>⭐ Featured Jobs</h2>
+
+            <div id="featuredJobs"></div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+
+loadDashboard();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main-content">
+
+    <h1>👤 My Profile</h1>
+
+    <div class="job-card">
+
+        <p><strong>Name:</strong>
+        <span id="profileName"></span></p>
+
+        <p><strong>Email:</strong>
+        <span id="profileEmail"></span></p>
+
+    </div>
+
+</div>
+
+<script>
+
+let currentUser =
+localStorage.getItem("currentUser");
+
+let user =
+JSON.parse(localStorage.getItem(currentUser));
+
+if(user){
+
+document.getElementById("profileName").innerText =
+user.name;
+
+document.getElementById("profileEmail").innerText =
+user.email;
+
+}
+
+</script>
+
+</body>
+</html>

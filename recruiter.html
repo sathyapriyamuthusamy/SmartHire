@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recruiter Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+<div class="sidebar">
+
+<h2>💜 SmartHire Recruiter</h2>
+
+<ul>
+<li onclick="window.location.href='recruiter.html'">🏠 Dashboard</li>
+<li onclick="viewRecruiterApplications()">📨 View Applications</li>
+<li onclick="toggleTheme()">🌙 Dark Mode</li>
+<li onclick="window.location.href='index.html'">🚪 Logout</li>
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<h1>💼 Recruiter Dashboard</h1>
+
+<div class="job-card">
+
+<h2>Post New Job</h2>
+
+<input
+type="text"
+id="jobTitle"
+placeholder="Job Title">
+
+<br><br>
+
+<input
+type="text"
+id="company"
+placeholder="Company Name">
+
+<br><br>
+
+<input
+type="text"
+id="location"
+placeholder="Location">
+
+<br><br>
+
+<button onclick="postJob()">
+Post Job
+</button>
+
+</div>
+
+<div class="job-card">
+
+<h2>📨 Applicant Applications</h2>
+
+<div id="applicationList"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+
+viewRecruiterApplications();
+
+</script>
+
+</body>
+</html>

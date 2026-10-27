@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHire</title>
+    <link rel="stylesheet" href="style.css">
+
+<script>
+    var question="SMARTHIRE GIVES YOU THE BEST";
+    alert(question);
+</script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="moto">
+            <h2>Your Future ✨ Our Mission 🎯</h2>
+        </section>
+
+        <header>
+            <h1>SmartHire</h1>
+        </header>
+
+        <section class="template">
+            <img src="template.jpg" alt="SmartHire Banner">
+        </section>
+
+       
+        <section class="about-section">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>
+                    We are here to connect talent with opportunities and help
+                    applicants build successful careers while helping recruiters
+                    find the best candidates.
+                </p>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>~ Select Your Category!!</h2>
+
+            <div class="choice">
+                <h1>🧑🏻‍💼</h1>
+                <h3>APPLICANT</h3>
+                <p>Find Jobs & Build Your Bright Career</p>
+                
+            <button onclick="showApplicantLogin()">
+                Get Started
+            </button>
+            </div>
+
+            <div class="choice">
+                <h1>💼</h1>
+                <h3>RECRUITER</h3>
+                <p>Post Jobs & Find the Best Talent</p>
+                <button>Get Started</button>
+            </div>
+        </section>
+
+
+<!-- Applicant Login -->
+
+<div id="applicantLogin" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close"
+            onclick="closePopup('applicantLogin')">
+            ×
+        </span>
+
+        <h2>Applicant Login</h2>
+
+        <input
+            id="loginEmail"
+            type="email"
+            placeholder="Email">
+
+        <input
+            id="loginPassword"
+            type="password"
+            placeholder="Password">
+
+        <button onclick="loginUser()">
+            Login
+        </button>
+
+        <p id="loginMessage"></p>
+        
+        <p>
+            <span class="signup-link"
+                onclick="showForgotPassword()">
+                Forgot Password?
+            </span>
+        </p>
+
+        <p>
+            New User?
+
+            <span class="signup-link"
+                onclick="showApplicantSignup()">
+                Sign Up
+            </span>
+        </p>
+
+    </div>
+    
+</div>
+
+<!-- Applicant Signup -->
+
+<div id="applicantSignup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close"
+            onclick="closePopup('applicantSignup')">
+            ×
+        </span>
+
+        <h2>Create Account</h2>
+
+        <input
+            id="signupName"
+            type="text"
+            placeholder="Full Name">
+
+        <input
+            id="signupEmail"
+            type="email"
+            placeholder="Email">
+
+        <input
+                 id="signupPassword"
+            type="password"
+            placeholder="Password">
+
+        <input
+            id="signupConfirm"
+            type="password"
+            placeholder="Confirm Password">
+
+        <button onclick="registerUser()">
+            Create Account
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Forgot Password -->
+
+<div id="forgotPasswordPopup" class="popup">
+
+    
+    <div class="popup-content">
+
+        <span class="close"
+            onclick="closePopup('forgotPasswordPopup')">
+            ×
+        </span>
+
+        <h2>Reset Password</h2>
+
+        <input
+            id="resetEmail"
+            type="email"
+            placeholder="Registered Email">
+
+        <input
+            id="newPassword"
+            type="password"
+            placeholder="New Password">
+
+        <button onclick="resetPassword()">
+            Update Password
+        </button>
+
+    </div>
+
+</div>
+        
+        <footer>
+            <p>
+                <a href="#">Contact</a> |
+                <a href="#">Privacy</a> |
+                <a href="#">FAQ</a>
+            </p>
+            <p>© 2026 SmartHire</p>
+        </footer>
+
+    </div>
+
+    
+<script src="script.js"></script>
+
+
+</body>
+</html>
