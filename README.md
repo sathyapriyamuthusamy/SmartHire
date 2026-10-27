@@ -51,6 +51,14 @@ SmartHire/
 └── README.md
 ```
 
+## 🖥️ Screenshots
+
+### Homepage
+![SmartHire Homepage](screenshots/homepage.png)
+
+### Dashboard
+![SmartHire Dashboard](screenshots/dashboard.png)
+
 ## 🎯 Project Goal
 
 The goal of SmartHire is to provide a simple, accessible web interface for common job-search and recruitment activities.
