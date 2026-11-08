@@ -1,6 +1,6 @@
 # SmartHire 💼
 
-### A Smart Hiring Platform
+### A Smart Hiring Platform for freshers and altering job seekers
 
 SmartHire is a web-based hiring platform built using HTML, CSS, and JavaScript. It provides a user interface for exploring job opportunities, managing applications, viewing notifications, and accessing recruitment-related features.
 
